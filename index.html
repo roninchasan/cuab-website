@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cornell Autonomous Bicycle - Home</title>
+  <link rel="shortcut icon" href="images/favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="styles/all.css" media="all">
+  <script type="text/javascript" src="scripts/jquery-3.3.1.min.js" ></script>
+  <script type="text/javascript" src="scripts/nav.js" ></script>
+  <script type="text/javascript" src="scripts/video-gallery.js" ></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="mobile-nav">
+        <a href="#" id="mobileNavToggle" onclick="mobileNavToggle(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </a>
+        <ul id="mobile-nav-content" class="hidden">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team-members.html">Team Members</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="recruitment.html">Recruitment</a></li>
+          <li><a href="sponsorship.html">Sponsorship</a></li>
+          <li><a href="resources.html">Resources</a></li>
+
+        </ul>
+      </div>
+      <div class="desktop-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team-members.html">Team Members</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="recruitment.html">Recruitment</a></li>
+          <li><a href="sponsorship.html">Sponsorship</a></li>
+          <li><a href="resources.html">Resources</a></li>
+
+        </ul>
+      </div>
+    </nav>
+    <div class="nav_side">
+      <div class="left_arrow_container">
+        <div class="left_arrow">
+          <a href="resources.html"><img class="arrows" src="images/favicon_backwards.png" alt/></a>
+          <!--Image owned by Cornell Autonomous Bicycle-->
+        </div>
+      </div>
+      <div class="right_arrow_container">
+        <div class="right_arrow">
+          <a href="team-members.html"><img class="arrows" src="images/favicon.png" alt/></a>
+          <!--Image owned by Cornell Autonomous Bicycle-->
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo Banner/Title -->
+    <section class="hero1">
+      <div class="heroinner">
+          <h1>Cornell Autonomous Bicycle</h1>
+          <h2>We are an undergraduate project team at Cornell University working to build a self-balancing, self-navigating, robotic bicycle. We are solving problems involving balance, navigation, localization, obstacle avoidance, and autonomous starting/stopping. We also work on a human-rideable bicycle with balance assist features. The students on our team study mechanical engineering, computer science, and business.</h2>
+      </div>
+    </section>
+  </header>
+
+  <p class="centerText-home">Welcome to our website! Check out these videos of our autonomous bike and see what we are all about!</p>
+  <div class="frontpage-container">
+    <div class="video-gallery-menu">
+      <div class='row1'>
+        <input class="video-list" id="vid1" type="radio" name="video-list" checked="checked"/>
+        <label class="video-options-label" id="label1" for="vid1">Overview</label>
+        <input class="video-list" id="vid2" type="radio" name="video-list"/>
+        <label class="video-options-label" id="label2" for="vid2">Steer by Wire</label>
+        <input class="video-list" id="vid3" type="radio" name="video-list"/>
+        <label class="video-options-label" id="label3" for="vid3">Distrubance Rejection</label>
+      </div>
+      <div class='row2'>
+        <input class="video-list" id="vid4" type="radio" name="video-list"/>
+        <label class="video-options-label" id="label4" for="vid4">Grid Search</label>
+        <input class="video-list" id="vid5" type="radio" name="video-list"/>
+        <label class="video-options-label" id="label5" for="vid5">LQR Gains</label>
+        <input class="video-list" id="vid6" type="radio" name="video-list"/>
+        <label class="video-options-label" id="label6" for="vid6">Non-Linear Gains</label>
+     </div>
+    </div>
+    <div class='video-container'>
+      <video id="video1" width="700" poster="images/bike_video_poster.png" controls>
+        <source src="videos/bike_video.mp4" type="video/mp4">
+        <!-- Videos by Cornell Autonomous Bicycle-->
+        Your browser does not support HTML5 video.
+      </video>
+      <video class="hidden" id="video2" width="700" poster="images/sbw-short-poster.png" controls>
+        <source src="videos/sbw-test-short.mp4" type="video/mp4">
+        <!-- Videos by Cornell Autonomous Bicycle-->
+        Your browser does not support HTML5 video.
+      </video>
+      <video class="hidden" id="video3" width="700" poster="images/Distrubance_Test_poster.png" controls>
+        <source src="videos/Distrubance_Test.mp4" type="video/mp4">
+        <!-- Videos by Cornell Autonomous Bicycle-->
+        Your browser does not support HTML5 video.
+      </video>
+      <video class="hidden" id="video4" width="700" poster="images/Grid_Search_poster.png" controls>
+        <source src="videos/Grid_Search.mp4" type="video/mp4">
+        <!-- Videos by Cornell Autonomous Bicycle-->
+        Your browser does not support HTML5 video.
+      </video>
+      <video class="hidden" id="video5" width="700" poster="images/LQR_Gains_poster.png" controls>
+        <source src="videos/LQR_Gains.mp4" type="video/mp4">
+        <!-- Videos by Cornell Autonomous Bicycle-->
+        Your browser does not support HTML5 video.
+      </video>
+      <video class="hidden" id="video6" width="700" poster="images/Non-linear_Gains_poster.png" controls>
+        <source src="videos/Non-linear_Gains_Test.mp4" type="video/mp4">
+        <!-- Videos by Cornell Autonomous Bicycle-->
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+  </div>
+
+  <div class = "smallContainer">
+
+    <p class="mainText">If you'd like to reach us, email us at <a href="mailto:cuabwebsite@gmail.com">cuabwebsite@gmail.com</a></p>
+  </div>
+
+  <footer>
+    <div class="foot">
+      <p>© CU Bike 2018 | All videos and images are property of CU Bike</p>
+      <div class="socialmedia">
+        <a href="https://www.facebook.com/cuautonomousbicycle">
+          <img title="Facebook" alt="Facebook" src="images/facebook.png" width="35" height="35" />
+          <!-- Icon provided https://www.vecteezy.com/vector-art/95039-free-social-media-icons-->
+        </a>
+        <a href="https://www.instagram.com/cornell_autonomous_bicycle/">
+          <img title="Instagram" alt="Instagram" src="images/instagram.png" width="35" height="35" />
+          <!-- Icon provided https://www.vecteezy.com/vector-art/95039-free-social-media-icons-->
+        </a>
+        <p class="iconCitation">Social Media Icons: <a rel="nofollow" href="https://www.vecteezy.com/vector-art/95039-free-social-media-icons">Vecteezy</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

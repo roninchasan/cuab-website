@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="styles/all.css" media="all">
+    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="scripts/nav.js" ></script>
+    <script type="text/javascript" src="scripts/contactus.js" ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="mobile-nav">
+          <a href="#" id="mobileNavToggle" onclick="mobileNavToggle(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </a>
+          <ul id="mobile-nav-content" class="hidden">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team-members.html">Team Members</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="recruitment.html">Recruitment</a></li>
+            <li><a href="sponsorship.html">Sponsorship</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team-members.html">Team Members</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="recruitment.html">Recruitment</a></li>
+            <li><a href="sponsorship.html">Sponsorship</a></li>
+            <li><a href="resources.html">Resources</a></li>
+
+          </ul>
+        </div>
+      </nav>
+      <div class="nav_side">
+        <div class="left_arrow_container">
+          <div class="left_arrow">
+            <a href="resources.html"><img class="arrows" src="images/favicon_backwards.png" alt/></a>
+          </div>
+        </div>
+        <div class="right_arrow_container">
+          <div class="right_arrow">
+            <a href="index.html"><img class="arrows" src="images/favicon.png" alt/></a>
+          </div>
+        </div>
+      </div>
+      <section class="hero2">
+        <div class="heroinner">
+            <h1>Cornell Autonomous Bicycle</h1>
+            <h2>Undergraduate Project Team</h2>
+        </div>
+      </section>
+    </header>
+
+    <h2>Contact Us</h2>
+
+    <div class="formContainer">
+      <p class="centerText">If you have anything you'd like to let us know, please leave us your name, email, and whatever your message, question, or suggestion may be in the boxes below. Be sure that you fill out every field.</p>
+      <form method="post" action="https://www.cs.cornell.edu/courses/cs1300/2018fa/submit.php" id="mainForm" novalidate>
+        <div class="labelAndInputHolder">
+          <div class="labelHolder">
+            <label for="userName">Name:</label>
+          </div>
+          <div class="inputHolder">
+            <input type="text" id="userName" name="userName" placeholder="Your Name" required>
+          </div>
+          <span class="errorContainer hidden" id="emailErrorNoName">Please enter your name.</span>
+        </div>
+
+        <div class="labelAndInputHolder">
+          <div class="labelHolder">
+            <label for="userEmail">Email: </label>
+          </div>
+          <div class="inputHolder">
+            <input type="email" id="userEmail" name="userEmail" placeholder="Your Email" required>
+          </div>
+
+          <span class="errorContainer hidden" id="emailErrorNoEmail">
+            Please enter a valid email address.
+          </span>
+        </div>
+
+        <div>
+          <div class="messageLabelHolder">
+            <label for = "message">Message: </label>
+          </div>
+
+          <div class="messageInputHolder">
+            <textarea name="message" id = "message" placeholder="Your message" cols = "75" rows = "8" required></textarea>
+          </div>
+          <span class="errorContainer hidden" id="errorNoMessage">
+            Please enter your message to us.
+          </span>
+        </div>
+
+        <div>
+          <button type="submit" class="submit">Submit</button>
+        </div>
+
+      </form>
+    </div>
+
+    <footer>
+      <div class="foot">
+        <p>© CU Bike 2018 | All videos and images are property of CU Bike</p>
+        <div class="socialmedia">
+          <a href="https://www.facebook.com/cuautonomousbicycle">
+            <img title="Facebook" alt="Facebook" src="images/facebook.png" width="35" height="35" />
+            <!-- Icon provided https://www.vecteezy.com/vector-art/95039-free-social-media-icons-->
+          </a>
+          <a href="https://www.instagram.com/cornell_autonomous_bicycle/">
+            <img title="Instagram" alt="Instagram" src="images/instagram.png" width="35" height="35" />
+            <!-- Icon provided https://www.vecteezy.com/vector-art/95039-free-social-media-icons-->
+          </a>
+          <p class="iconCitation">Social Media Icons: <a rel="nofollow" href="https://www.vecteezy.com/vector-art/95039-free-social-media-icons">Vecteezy</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

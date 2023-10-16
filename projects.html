@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="styles/all.css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="scripts/nav.js" ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="mobile-nav">
+          <a href="#" id="mobileNavToggle" onclick="mobileNavToggle(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </a>
+          <ul id="mobile-nav-content" class="hidden">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team-members.html">Team Members</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="recruitment.html">Recruitment</a></li>
+            <li><a href="sponsorship.html">Sponsorship</a></li>
+            <li><a href="resources.html">Resources</a></li>
+
+          </ul>
+        </div>
+        <div class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team-members.html">Team Members</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="recruitment.html">Recruitment</a></li>
+            <li><a href="sponsorship.html">Sponsorship</a></li>
+            <li><a href="resources.html">Resources</a></li>
+
+          </ul>
+        </div>
+      </nav>
+      <div class="nav_side">
+        <div class="left_arrow_container">
+          <div class="left_arrow">
+            <a href="team-members.html"><img class="arrows" src="images/favicon_backwards.png" alt/></a>
+            <!--Image owned by Cornell Autonomous Bicycle-->
+          </div>
+        </div>
+        <div class="right_arrow_container">
+          <div class="right_arrow">
+            <a href="recruitment.html"><img class="arrows" src="images/favicon.png" alt/></a>
+            <!--Image owned by Cornell Autonomous Bicycle-->
+          </div>
+        </div>
+      </div>
+      <section class="hero2">
+        <div class="heroinner">
+            <h1>Cornell Autonomous Bicycle</h1>
+            <h2>Undergraduate Project Team</h2>
+        </div>
+      </section>
+
+    </header>
+
+    <h2>Steer-By-Wire and the Autonomous Bike</h2>
+
+    <div class="formContainerSponsor">
+      <p class ="centerText">Given that our project is a multi-year, multi-student work of engineering, we know our progress can be hard to follow. We've created this page to show you our progress in an organized way.</p>
+        <div class="smallContainer">
+          <h2>The Autonomous Bicycle</h2>
+
+          <img src = "images/bike1.jpg" alt = "Bike1" class = "photo">
+        </div>
+        <div class="smallContainer">
+          <h2>Goals</h2>
+          <p class = "centerText">The Cornell Autonomous Bicycle Team develops a <strong>robotically-stabilized bicycle with the goal of balancing "better" than any other autonomous bicycle</strong>. Others have developed autonomous bicycles, often balancing using gyroscopes or reaction wheels. Gyroscopes and reaction wheels are heavy and energy inefficient. Our bicycle balances only by steering the front wheel. This is similar to how humans balance bicycles. We are working to make our bicycle navigate autonomously around Cornell's campus. We aim to make our bicycle robust to disturbances (wind, bumps, etc).</p>
+        </div>
+        <div class="sponsorimages">
+          <figure><img src="images/work2.jpg" alt="work photo #2">
+            <figcaption>Image taken by Cornell Autonomous Bicycle</figcaption>
+            <!--All images taken by Cornell Autonomous Bicycle-->
+          </figure>
+          <figure><img src="images/bike-work.jpg" alt="bike work">
+            <figcaption>Image taken by Cornell Autonomous Bicycle</figcaption>
+            <!--All images taken by Cornell Autonomous Bicycle-->
+          </figure>
+          <figure><img src="images/board1.jpeg" alt="whiteboard"><figcaption>Image taken by Cornell Autonomous Bicycle</figcaption>
+          <!--All images taken by Cornell Autonomous Bicycle-->
+          </figure>
+        </div>
+
+        <div class="smallContainer">
+          <h2>Progress</h2>
+          <p class = "centerText">Our bicycle can autonomously balance! This semester (Spring 2018), we developed and tested new balance controllers, both linear and nonlinear, in simulation and on our prototype bicycle. We took the first steps to implement a computer vision system: we conducted preliminary tests of obstacle detection and localization algorithms using a stereo camera. We integrated more sensors into our position estimation algorithm. This improved the bicycle's ability to know its location. Next semester, we hope to implement our navigation algorithm on our physical bicycle to make our bicycle fully autonomous.</p>
+        </div>
+    </div>
+
+
+    <footer>
+      <div class="foot">
+        <p>© CU Bike 2018 | All images are property of CU Bike</p>
+        <div class="socialmedia">
+          <a href="https://www.facebook.com/cuautonomousbicycle">
+            <img title="Facebook" alt="Facebook" src="images/facebook.png" width="35" height="35" />
+            <!-- Icon provided https://www.vecteezy.com/vector-art/95039-free-social-media-icons-->
+          </a>
+          <a href="https://www.instagram.com/cornell_autonomous_bicycle/">
+            <img title="Instagram" alt="Instagram" src="images/instagram.png" width="35" height="35" />
+            <!-- Icon provided https://www.vecteezy.com/vector-art/95039-free-social-media-icons-->
+          </a>
+          <p class="iconCitation">Social Media Icons: <a rel="nofollow" href="https://www.vecteezy.com/vector-art/95039-free-social-media-icons">Vecteezy</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
